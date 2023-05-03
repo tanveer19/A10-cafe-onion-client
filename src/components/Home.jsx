@@ -14,14 +14,10 @@ const Home = () => {
                 <br />
                 Delicious Food
               </h2>
-              <p data-aos="fade-up" data-aos-delay="100">
-                Sed autem laudantium dolores. Voluptatem itaque ea consequatur
-                eveniet. Eum quas beatae cumque eum quaerat.
-              </p>
             </div>
             <div className="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
               <img
-                src="assets/img/hero-img.png"
+                src="img/hero-img.png"
                 className="img-fluid"
                 alt=""
                 data-aos="zoom-out"
@@ -45,7 +41,7 @@ const Home = () => {
             <div className="row gy-4">
               <div
                 className="col-lg-7 position-relative about-img"
-                // style={{ backgroundImage: `url(/img/about.jpg)` }}
+                style={{ backgroundImage: `url(img/about.jpg)` }}
                 data-aos="fade-up"
                 data-aos-delay="150"
               >
@@ -288,12 +284,9 @@ const Home = () => {
 
                 <div className="row gy-5">
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-1.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-1.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-1.png"
+                        src="img/menu/menu-item-1.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -306,12 +299,9 @@ const Home = () => {
                   </div>
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-2.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-2.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-2.png"
+                        src="img/menu/menu-item-2.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -324,12 +314,9 @@ const Home = () => {
                   </div>
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-3.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-3.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-3.png"
+                        src="img/menu/menu-item-3.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -342,12 +329,9 @@ const Home = () => {
                   </div>
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-4.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-4.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-4.png"
+                        src="img/menu/menu-item-4.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -361,12 +345,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-5.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-5.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-5.png"
+                        src="img/menu/menu-item-5.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -380,12 +361,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-6.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-6.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-6.png"
+                        src="img/menu/menu-item-6.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -409,12 +387,9 @@ const Home = () => {
 
                 <div className="row gy-5">
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-1.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-1.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-1.png"
+                        src="img/menu/menu-item-1.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -428,12 +403,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-2.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-2.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-2.png"
+                        src="img/menu/menu-item-2.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -447,12 +419,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-3.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-3.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-3.png"
+                        src="img/menu/menu-item-3.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -466,12 +435,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-4.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-4.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-4.png"
+                        src="img/menu/menu-item-4.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -485,12 +451,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-5.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-5.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-5.png"
+                        src="img/menu/menu-item-5.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -504,12 +467,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-6.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-6.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-6.png"
+                        src="img/menu/menu-item-6.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -533,12 +493,9 @@ const Home = () => {
 
                 <div className="row gy-5">
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-1.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-1.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-1.png"
+                        src="img/menu/menu-item-1.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -552,12 +509,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-2.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-2.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-2.png"
+                        src="img/menu/menu-item-2.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -571,12 +525,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-3.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-3.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-3.png"
+                        src="img/menu/menu-item-3.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -590,12 +541,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-4.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-4.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-4.png"
+                        src="img/menu/menu-item-4.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -609,12 +557,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-5.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-5.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-5.png"
+                        src="img/menu/menu-item-5.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -628,12 +573,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-6.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-6.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-6.png"
+                        src="img/menu/menu-item-6.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -657,12 +599,9 @@ const Home = () => {
 
                 <div className="row gy-5">
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-1.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-1.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-1.png"
+                        src="img/menu/menu-item-1.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -676,12 +615,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-2.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-2.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-2.png"
+                        src="img/menu/menu-item-2.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -695,12 +631,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-3.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-3.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-3.png"
+                        src="img/menu/menu-item-3.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -714,12 +647,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-4.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-4.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-4.png"
+                        src="img/menu/menu-item-4.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -733,12 +663,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-5.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-5.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-5.png"
+                        src="img/menu/menu-item-5.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -752,12 +679,9 @@ const Home = () => {
                   {/* Menu Item */}
 
                   <div className="col-lg-4 menu-item">
-                    <a
-                      href="assets/img/menu/menu-item-6.png"
-                      className="glightbox"
-                    >
+                    <a href="img/menu/menu-item-6.png" className="glightbox">
                       <img
-                        src="assets/img/menu/menu-item-6.png"
+                        src="img/menu/menu-item-6.png"
                         className="menu-img img-fluid"
                         alt=""
                       />
@@ -776,236 +700,6 @@ const Home = () => {
           </div>
         </section>
         {/* End Menu Section */}
-
-        {/* ======= Testimonials Section ======= */}
-        <section id="testimonials" className="testimonials section-bg">
-          <div className="container" data-aos="fade-up">
-            <div className="section-header">
-              <h2>Testimonials</h2>
-              <p>
-                What Are They <span>Saying About Us</span>
-              </p>
-            </div>
-
-            <div
-              className="slides-1 swiper"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <div className="row gy-4 justify-content-center">
-                      <div className="col-lg-6">
-                        <div className="testimonial-content">
-                          <p>
-                            <i className="bi bi-quote quote-icon-left"></i>
-                            Proin iaculis purus consequat sem cure digni ssim
-                            donec porttitora entum suscipit rhoncus. Accusantium
-                            quam, ultricies eget id, aliquam eget nibh et.
-                            Maecen aliquam, risus at semper.
-                            <i className="bi bi-quote quote-icon-right"></i>
-                          </p>
-                          <h3>Saul Goodman</h3>
-                          <h4>Ceo &amp; Founder</h4>
-                          <div className="stars">
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 text-center">
-                        <img
-                          src="assets/img/testimonials/testimonials-1.jpg"
-                          className="img-fluid testimonial-img"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* End testimonial item */}
-
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <div className="row gy-4 justify-content-center">
-                      <div className="col-lg-6">
-                        <div className="testimonial-content">
-                          <p>
-                            <i className="bi bi-quote quote-icon-left"></i>
-                            Export tempor illum tamen malis malis eram quae
-                            irure esse labore quem cillum quid cillum eram malis
-                            quorum velit fore eram velit sunt aliqua noster
-                            fugiat irure amet legam anim culpa.
-                            <i className="bi bi-quote quote-icon-right"></i>
-                          </p>
-                          <h3>Sara Wilsson</h3>
-                          <h4>Designer</h4>
-                          <div className="stars">
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 text-center">
-                        <img
-                          src="assets/img/testimonials/testimonials-2.jpg"
-                          className="img-fluid testimonial-img"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* End testimonial item */}
-
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <div className="row gy-4 justify-content-center">
-                      <div className="col-lg-6">
-                        <div className="testimonial-content">
-                          <p>
-                            <i className="bi bi-quote quote-icon-left"></i>
-                            Enim nisi quem export duis labore cillum quae magna
-                            enim sint quorum nulla quem veniam duis minim tempor
-                            labore quem eram duis noster aute amet eram fore
-                            quis sint minim.
-                            <i className="bi bi-quote quote-icon-right"></i>
-                          </p>
-                          <h3>Jena Karlis</h3>
-                          <h4>Store Owner</h4>
-                          <div className="stars">
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 text-center">
-                        <img
-                          src="assets/img/testimonials/testimonials-3.jpg"
-                          className="img-fluid testimonial-img"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* End testimonial item */}
-
-                <div className="swiper-slide">
-                  <div className="testimonial-item">
-                    <div className="row gy-4 justify-content-center">
-                      <div className="col-lg-6">
-                        <div className="testimonial-content">
-                          <p>
-                            <i className="bi bi-quote quote-icon-left"></i>
-                            Quis quorum aliqua sint quem legam fore sunt eram
-                            irure aliqua veniam tempor noster veniam enim culpa
-                            labore duis sunt culpa nulla illum cillum fugiat
-                            legam esse veniam culpa fore nisi cillum quid.
-                            <i className="bi bi-quote quote-icon-right"></i>
-                          </p>
-                          <h3>John Larson</h3>
-                          <h4>Entrepreneur</h4>
-                          <div className="stars">
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                            <i className="bi bi-star-fill"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="col-lg-2 text-center">
-                        <img
-                          src="assets/img/testimonials/testimonials-4.jpg"
-                          className="img-fluid testimonial-img"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* End testimonial item */}
-              </div>
-              <div className="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-        {/* End Testimonials Section */}
-
-        {/* ======= Events Section ======= */}
-        <section id="events" className="events">
-          <div className="container-fluid" data-aos="fade-up">
-            <div className="section-header">
-              <h2>Events</h2>
-              <p>
-                Share <span>Your Moments</span> In Our Restaurant
-              </p>
-            </div>
-
-            <div
-              className="slides-3 swiper"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <div className="swiper-wrapper">
-                <div
-                  className="swiper-slide event-item d-flex flex-column justify-content-end"
-                  // style="backgroundImage: url(assets/img/events-1.jpg)"
-                >
-                  <h3>Custom Parties</h3>
-                  <div className="price align-self-start">$99</div>
-                  <p className="description">
-                    Quo corporis voluptas ea ad. Consectetur inventore sapiente
-                    ipsum voluptas eos omnis facere. Enim facilis veritatis id
-                    est rem repudiandae nulla expedita quas.
-                  </p>
-                </div>
-                {/* End Event item */}
-
-                <div
-                  className="swiper-slide event-item d-flex flex-column justify-content-end"
-                  // style="background-image: url(assets/img/events-2.jpg)"
-                >
-                  <h3>Private Parties</h3>
-                  <div className="price align-self-start">$289</div>
-                  <p className="description">
-                    In delectus sint qui et enim. Et ab repudiandae inventore
-                    quaerat doloribus. Facere nemo vero est ut dolores ea
-                    assumenda et. Delectus saepe accusamus aspernatur.
-                  </p>
-                </div>
-                {/* End Event item */}
-
-                <div
-                  className="swiper-slide event-item d-flex flex-column justify-content-end"
-                  // style="backgroundImage: url(assets/img/events-3.jpg)"
-                >
-                  <h3>Birthday Parties</h3>
-                  <div className="price align-self-start">$499</div>
-                  <p className="description">
-                    Laborum aperiam atque omnis minus omnis est qui assumenda
-                    quos. Quis id sit quibusdam. Esse quisquam ducimus officia
-                    ipsum ut quibusdam maxime. Non enim perspiciatis.
-                  </p>
-                </div>
-                {/* End Event item */}
-              </div>
-              <div className="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-        {/* End Events Section */}
 
         {/* ======= Chefs Section ======= */}
         <section id="chefs" className="chefs section-bg">
@@ -1026,7 +720,7 @@ const Home = () => {
                 <div className="chef-member">
                   <div className="member-img">
                     <img
-                      src="assets/img/chefs/chefs-1.jpg"
+                      src="img/chefs/chefs-1.jpg"
                       className="img-fluid"
                       alt=""
                     />
@@ -1066,7 +760,7 @@ const Home = () => {
                 <div className="chef-member">
                   <div className="member-img">
                     <img
-                      src="assets/img/chefs/chefs-2.jpg"
+                      src="img/chefs/chefs-2.jpg"
                       className="img-fluid"
                       alt=""
                     />
@@ -1106,7 +800,7 @@ const Home = () => {
                 <div className="chef-member">
                   <div className="member-img">
                     <img
-                      src="assets/img/chefs/chefs-3.jpg"
+                      src="img/chefs/chefs-3.jpg"
                       className="img-fluid"
                       alt=""
                     />
@@ -1141,262 +835,6 @@ const Home = () => {
           </div>
         </section>
         {/* End Chefs Section */}
-
-        {/* ======= Book A Table Section ======= */}
-        <section id="book-a-table" className="book-a-table">
-          <div className="container" data-aos="fade-up">
-            <div className="section-header">
-              <h2>Book A Table</h2>
-              <p>
-                Book <span>Your Stay</span> With Us
-              </p>
-            </div>
-
-            <div className="row g-0">
-              <div
-                className="col-lg-4 reservation-img"
-                // style="background-image: url(assets/img/reservation.jpg);"
-                data-aos="zoom-out"
-                data-aos-delay="200"
-              ></div>
-
-              <div className="col-lg-8 d-flex align-items-center reservation-form-bg">
-                <form
-                  action="forms/book-a-table.php"
-                  method="post"
-                  role="form"
-                  className="php-email-form"
-                  data-aos="fade-up"
-                  data-aos-delay="100"
-                >
-                  <div className="row gy-4">
-                    <div className="col-lg-4 col-md-6">
-                      <input
-                        type="text"
-                        name="name"
-                        className="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                        data-rule="minlen:4"
-                        data-msg="Please enter at least 4 chars"
-                      />
-                      <div className="validate"></div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                      <input
-                        type="email"
-                        className="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email"
-                        data-rule="email"
-                        data-msg="Please enter a valid email"
-                      />
-                      <div className="validate"></div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="phone"
-                        id="phone"
-                        placeholder="Your Phone"
-                        data-rule="minlen:4"
-                        data-msg="Please enter at least 4 chars"
-                      />
-                      <div className="validate"></div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                      <input
-                        type="text"
-                        name="date"
-                        className="form-control"
-                        id="date"
-                        placeholder="Date"
-                        data-rule="minlen:4"
-                        data-msg="Please enter at least 4 chars"
-                      />
-                      <div className="validate"></div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="time"
-                        id="time"
-                        placeholder="Time"
-                        data-rule="minlen:4"
-                        data-msg="Please enter at least 4 chars"
-                      />
-                      <div className="validate"></div>
-                    </div>
-                    <div className="col-lg-4 col-md-6">
-                      <input
-                        type="number"
-                        className="form-control"
-                        name="people"
-                        id="people"
-                        placeholder="# of people"
-                        data-rule="minlen:1"
-                        data-msg="Please enter at least 1 chars"
-                      />
-                      <div className="validate"></div>
-                    </div>
-                  </div>
-                  <div className="form-group mt-3">
-                    <textarea
-                      className="form-control"
-                      name="message"
-                      rows="5"
-                      placeholder="Message"
-                    ></textarea>
-                    <div className="validate"></div>
-                  </div>
-                  <div className="mb-3">
-                    <div className="loading">Loading</div>
-                    <div className="error-message"></div>
-                    <div className="sent-message">
-                      Your booking request was sent. We will call back or send
-                      an Email to confirm your reservation. Thank you!
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <button type="submit">Book a Table</button>
-                  </div>
-                </form>
-              </div>
-              {/* End Reservation Form */}
-            </div>
-          </div>
-        </section>
-        {/* End Book A Table Section */}
-
-        {/* ======= Gallery Section ======= */}
-        <section id="gallery" className="gallery section-bg">
-          <div className="container" data-aos="fade-up">
-            <div className="section-header">
-              <h2>gallery</h2>
-              <p>
-                Check <span>Our Gallery</span>
-              </p>
-            </div>
-
-            <div className="gallery-slider swiper">
-              <div className="swiper-wrapper align-items-center">
-                <div className="swiper-slide">
-                  <a
-                    className="glightbox"
-                    data-gallery="images-gallery"
-                    href="assets/img/gallery/gallery-1.jpg"
-                  >
-                    <img
-                      src="assets/img/gallery/gallery-1.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="swiper-slide">
-                  <a
-                    className="glightbox"
-                    data-gallery="images-gallery"
-                    href="assets/img/gallery/gallery-2.jpg"
-                  >
-                    <img
-                      src="assets/img/gallery/gallery-2.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="swiper-slide">
-                  <a
-                    className="glightbox"
-                    data-gallery="images-gallery"
-                    href="assets/img/gallery/gallery-3.jpg"
-                  >
-                    <img
-                      src="assets/img/gallery/gallery-3.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="swiper-slide">
-                  <a
-                    className="glightbox"
-                    data-gallery="images-gallery"
-                    href="assets/img/gallery/gallery-4.jpg"
-                  >
-                    <img
-                      src="assets/img/gallery/gallery-4.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="swiper-slide">
-                  <a
-                    className="glightbox"
-                    data-gallery="images-gallery"
-                    href="assets/img/gallery/gallery-5.jpg"
-                  >
-                    <img
-                      src="assets/img/gallery/gallery-5.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="swiper-slide">
-                  <a
-                    className="glightbox"
-                    data-gallery="images-gallery"
-                    href="assets/img/gallery/gallery-6.jpg"
-                  >
-                    <img
-                      src="assets/img/gallery/gallery-6.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="swiper-slide">
-                  <a
-                    className="glightbox"
-                    data-gallery="images-gallery"
-                    href="assets/img/gallery/gallery-7.jpg"
-                  >
-                    <img
-                      src="assets/img/gallery/gallery-7.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </div>
-                <div className="swiper-slide">
-                  <a
-                    className="glightbox"
-                    data-gallery="images-gallery"
-                    href="assets/img/gallery/gallery-8.jpg"
-                  >
-                    <img
-                      src="assets/img/gallery/gallery-8.jpg"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </a>
-                </div>
-              </div>
-              <div className="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
-        {/* End Gallery Section */}
-
-        {/* ======= Contact Section ======= */}
-
-        {/* End Contact Section */}
       </main>
       {/* End #main */}
 
@@ -1464,7 +902,6 @@ const Home = () => {
   </footer> */}
 
       {/* End Footer */}
-      {/* End Footer */}
 
       <a
         href="#"
@@ -1476,15 +913,15 @@ const Home = () => {
       {/* <div id="preloader"></div> */}
 
       {/* Vendor JS Files */}
-      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/vendor/aos/aos.js"></script>
-      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-      {/* <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> */}
-      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="vendor/aos/aos.js"></script>
+      <script src="vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="vendor/php-email-form/validate.js"></script>
 
       {/* Template Main JS File */}
-      <script src="assets/js/main.js"></script>
+      <script src="js/main.js"></script>
     </div>
   );
 };
