@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Header = () => {
   return (
-    <div className="header fixed-top d-flex align-items-center">
+    <div className="header d-flex align-items-center">
       <div className="container d-flex align-items-center justify-content-between">
         <Link
           to="/Home"
