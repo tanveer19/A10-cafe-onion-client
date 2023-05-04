@@ -1,8 +1,24 @@
 import React from "react";
-import "./Login.css";
 import { Link } from "react-router-dom";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../firebase/firebase.config";
+import "./Login.css";
 
 const Login = () => {
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const loggedInUser = result.user;
+        console.log(loggedInUser);
+        // setUser(loggedInUser);
+      })
+      .catch((error) => {
+        console.log("error", error.message);
+      });
+  };
   return (
     <div className="form-container">
       <h2 className="form-title">Login</h2>
@@ -22,6 +38,9 @@ const Login = () => {
           New to Ema-john? <Link to="/signup">Create New Account</Link>
         </small>
       </p>
+      <div>
+        <button onClick={handleGoogleSignIn}>Google Login</button>
+      </div>
     </div>
   );
 };

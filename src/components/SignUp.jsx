@@ -43,7 +43,7 @@ const SignUp = () => {
         </div>
         <div className="form-control">
           <label htmlFor="photo">Photo URL</label>
-          <input type="text" name="photo" id="" required />
+          <input type="text" name="photo" id="" />
         </div>
         <input className="btn-submit" type="submit" value="Sign Up" />
       </form>
