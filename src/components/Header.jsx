@@ -13,7 +13,7 @@ const Header = () => {
           <h1>Cafe Tanveer</h1>
         </Link>
 
-        <nav className="navbar">
+        <nav className="">
           <Link to="/Home">Home</Link>
           <Link to="/blog">Blog</Link>
           <Link to="/login">Login</Link>

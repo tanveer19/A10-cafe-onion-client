@@ -37,10 +37,7 @@ const SignUp = () => {
           <label htmlFor="password">Password</label>
           <input type="password" name="password" id="" required />
         </div>
-        <div className="form-control">
-          <label htmlFor="confirm">Confirm Password</label>
-          <input type="password" name="confirm" id="" required />
-        </div>
+
         <div className="form-control">
           <label htmlFor="photo">Photo URL</label>
           <input type="text" name="photo" id="" />

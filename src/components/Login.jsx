@@ -1,15 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import {
+  GoogleAuthProvider,
+  getAuth,
+  signInWithPopup,
+  GithubAuthProvider,
+} from "firebase/auth";
 import app from "../firebase/firebase.config";
 import "./Login.css";
 
 const Login = () => {
   const auth = getAuth(app);
-  const provider = new GoogleAuthProvider();
+  const googleProvider = new GoogleAuthProvider();
+  const githubProvider = new GithubAuthProvider();
 
   const handleGoogleSignIn = () => {
-    signInWithPopup(auth, provider)
+    signInWithPopup(auth, googleProvider)
       .then((result) => {
         const loggedInUser = result.user;
         console.log(loggedInUser);
@@ -17,6 +23,17 @@ const Login = () => {
       })
       .catch((error) => {
         console.log("error", error.message);
+      });
+  };
+
+  const handleGithubSignIn = () => {
+    signInWithPopup(auth, githubProvider)
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+      })
+      .catch((error) => {
+        console.log(error);
       });
   };
   return (
@@ -40,6 +57,7 @@ const Login = () => {
       </p>
       <div>
         <button onClick={handleGoogleSignIn}>Google Login</button>
+        <button onClick={handleGithubSignIn}>Github Login</button>
       </div>
     </div>
   );
