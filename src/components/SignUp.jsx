@@ -8,23 +8,29 @@ const auth = getAuth(app);
 
 const SignUp = () => {
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
   const handleSignUp = (event) => {
+    //1. prevent refresh
     event.preventDefault();
-
+    setSuccess("");
+    // 2. collect form data
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
     const confirm = form.confirm.value;
     console.log(email, password, confirm);
-    // create user in FB
+    //3. create user in FB
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         const loggedUser = result.user;
         console.log(loggedUser);
+        setError("");
+        event.target.reset();
+        setSuccess("User has been created");
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error.message);
       });
 
     if (password !== confirm) {
