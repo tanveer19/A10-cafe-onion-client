@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./SignUp.css";
 import { Link } from "react-router-dom";
+import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
+import app from "../firebase/firebase.config";
+
+const auth = getAuth(app);
 
 const SignUp = () => {
   const [error, setError] = useState("");
@@ -13,6 +17,15 @@ const SignUp = () => {
     const password = form.password.value;
     const confirm = form.confirm.value;
     console.log(email, password, confirm);
+    // create user in FB
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
 
     if (password !== confirm) {
       setError("password did not match");
@@ -36,6 +49,10 @@ const SignUp = () => {
         <div className="form-control">
           <label htmlFor="password">Password</label>
           <input type="password" name="password" id="" required />
+        </div>
+        <div className="form-control">
+          <label htmlFor="confirm">Password</label>
+          <input type="password" name="confirm" id="" required />
         </div>
 
         <div className="form-control">
