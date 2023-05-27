@@ -7,7 +7,6 @@ import {
   GithubAuthProvider,
 } from "firebase/auth";
 import app from "../firebase/firebase.config";
-import "./Login.css";
 
 const Login = () => {
   const auth = getAuth(app);
