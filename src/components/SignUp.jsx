@@ -40,38 +40,75 @@ const SignUp = () => {
     }
   };
   return (
-    <div className="form-container">
-      <h2 className="form-title">Sign up</h2>
-      <form onSubmit={handleSignUp}>
-        <div className="form-control">
-          <label htmlFor="name">Name</label>
-          <input type="text" name="name" id="" required />
-        </div>
-        <div className="form-control">
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="" required />
-        </div>
-        <div className="form-control">
-          <label htmlFor="password">Password</label>
-          <input type="password" name="password" id="" required />
-        </div>
-        <div className="form-control">
-          <label htmlFor="confirm">Password</label>
-          <input type="password" name="confirm" id="" required />
-        </div>
+    <div className="hero min-h-screen bg-base-200">
+      <div className="hero-content flex-col lg:flex-row">
+        <div className=" w-1/2 mr-12"></div>
+        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card-body text-center">
+            <h1 className="text-5xl font-bold">Sign Up </h1>
 
-        <div className="form-control">
-          <label htmlFor="photo">Photo URL</label>
-          <input type="text" name="photo" id="" />
+            <form onSubmit={handleSignUp}>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Name</span>
+                </label>
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Name"
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="email"
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Password</span>
+                </label>
+                <input
+                  type="text"
+                  name="password"
+                  placeholder="password"
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Photo URL</span>
+                </label>
+                <input
+                  type="text"
+                  name="photoURL"
+                  placeholder="photoURL"
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control mt-6">
+                <input
+                  className="btn btn-primary"
+                  type="submit"
+                  value="Signup"
+                />
+              </div>
+            </form>
+            <p className="my-4 text-center">
+              Do You have an account?
+              <Link className="text-orange-600 font-bold mx-2" to="/login">
+                Login
+              </Link>
+            </p>
+          </div>
         </div>
-        <input className="btn-submit" type="submit" value="Sign Up" />
-      </form>
-      <p>
-        <small>
-          Already have an account? <Link to="/login">Login</Link>
-        </small>
-      </p>
-      <p className="text-error">{error}</p>
+      </div>
     </div>
   );
 };
