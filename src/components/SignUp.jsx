@@ -83,6 +83,17 @@ const SignUp = () => {
               </div>
               <div className="form-control">
                 <label className="label">
+                  <span className="label-text">confirm Password</span>
+                </label>
+                <input
+                  type="text"
+                  name="confirm"
+                  placeholder="password"
+                  className="input input-bordered"
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
                   <span className="label-text">Photo URL</span>
                 </label>
                 <input
