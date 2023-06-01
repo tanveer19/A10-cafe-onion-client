@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import app from "../firebase/firebase.config";
+import { AuthContext } from "../providers/AuthProvider";
 
 const auth = getAuth(app);
 
@@ -9,35 +10,32 @@ const SignUp = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
+  const { createUser } = useContext(AuthContext);
+
   const handleSignUp = (event) => {
     //1. prevent refresh
     event.preventDefault();
-    setSuccess("");
+    // setSuccess("");
+
     // 2. collect form data
     const form = event.target;
+    const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-    const confirm = form.confirm.value;
-    console.log(email, password, confirm);
+    console.log(name, email, password);
+
     //3. create user in FB
-    createUserWithEmailAndPassword(auth, email, password)
+    createUser(email, password)
       .then((result) => {
-        const loggedUser = result.user;
-        console.log(loggedUser);
-        setError("");
-        event.target.reset();
-        setSuccess("User has been created");
+        const user = result.user;
+        console.log(user);
+        // setError("");
+        // event.target.reset();
+        // setSuccess("User has been created");
       })
       .catch((error) => {
         console.log(error.message);
       });
-
-    if (password !== confirm) {
-      setError("password did not match");
-      return;
-    } else if (password.length < 6) {
-      setError("password must be at least 6 characters");
-    }
   };
   return (
     <div className="hero min-h-screen bg-base-200">
@@ -81,17 +79,7 @@ const SignUp = () => {
                   className="input input-bordered"
                 />
               </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">confirm Password</span>
-                </label>
-                <input
-                  type="text"
-                  name="confirm"
-                  placeholder="password"
-                  className="input input-bordered"
-                />
-              </div>
+
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Photo URL</span>

@@ -38,7 +38,7 @@ const AuthProvider = ({ children }) => {
     return () => {
       return unsubscribe();
     };
-  });
+  }, []);
 
   const authInfo = { user, loading, createUser, signIn, logOut };
 

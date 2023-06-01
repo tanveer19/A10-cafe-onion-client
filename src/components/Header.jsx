@@ -43,9 +43,7 @@ const Header = () => {
             {navOptions}
           </ul>
         </div>
-        <Link to="/">
-          <a>Cafe Onion</a>
-        </Link>
+        <Link to="/">Cafe Onion</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navOptions}</ul>
