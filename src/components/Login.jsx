@@ -10,6 +10,8 @@ import app from "../firebase/firebase.config";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Login = () => {
+  // show user photo
+  const [user, setUser] = useState(null);
   // to get and show error in form
   const [error, setError] = useState("");
   const auth = getAuth(app);
@@ -21,7 +23,7 @@ const Login = () => {
       .then((result) => {
         const loggedInUser = result.user;
         console.log(loggedInUser);
-        // setUser(loggedInUser);
+        setUser(loggedInUser);
       })
       .catch((error) => {
         console.log("error", error.message);
@@ -46,7 +48,6 @@ const Login = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    // console.log(email, password);
 
     signIn(email, password)
       .then((result) => {
@@ -106,6 +107,12 @@ const Login = () => {
                   >
                     Google Login
                   </button>
+
+                  {user && (
+                    <div>
+                      <img src={user.photoURL} alt="" />
+                    </div>
+                  )}
 
                   <button onClick={handleGithubSignIn} className="btn w-1/2">
                     Github Login

@@ -33,6 +33,12 @@ const Header = () => {
         </li>
       )}
 
+      {user && (
+        <div>
+          <img src={user.photoURL} alt="" style={{ width: "60px" }} />
+        </div>
+      )}
+
       <li>
         {user ? (
           <>
