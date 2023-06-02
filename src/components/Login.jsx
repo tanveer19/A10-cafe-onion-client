@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import {
   GoogleAuthProvider,
@@ -10,6 +10,8 @@ import app from "../firebase/firebase.config";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Login = () => {
+  // to get and show error in form
+  const [error, setError] = useState("");
   const auth = getAuth(app);
   const googleProvider = new GoogleAuthProvider();
   const githubProvider = new GithubAuthProvider();
@@ -50,10 +52,13 @@ const Login = () => {
       .then((result) => {
         const loggedUser = result.user;
         console.log(loggedUser);
+        setError("");
+
         form.reset();
       })
       .catch((error) => {
-        console.log(error);
+        console.error(error.message);
+        setError(error.message);
       });
   };
 
@@ -119,6 +124,7 @@ const Login = () => {
                   Sign Up
                 </Link>
               </p>
+              <p className="bg-error">{error}</p>
             </div>
           </div>
         </div>
