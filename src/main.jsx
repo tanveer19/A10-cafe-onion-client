@@ -9,6 +9,9 @@ import Blog from "./components/Blog";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import AuthProvider from "./providers/AuthProvider";
+import ChefRecipe from "./components/ChefRecipe";
+import PrivateRoute from "./routes/PrivateRoute";
+import Profile from "./components/Profile";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,22 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog></Blog>,
+      },
+      {
+        path: "/chefrecipe",
+        element: (
+          <PrivateRoute>
+            <ChefRecipe></ChefRecipe>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",

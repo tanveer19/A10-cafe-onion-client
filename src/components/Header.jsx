@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.error(error));
+  };
+
   const navOptions = (
     <>
       <li>
@@ -11,8 +20,30 @@ const Header = () => {
       <li>
         <Link to="/blog">Blog</Link>
       </li>
+
+      {user && (
+        <li>
+          <Link to="/chefrecipe">Chef Recipe</Link>
+        </li>
+      )}
+
+      {user && (
+        <li>
+          <Link to="/profile">Profile</Link>
+        </li>
+      )}
+
       <li>
-        <Link to="/login">Login</Link>
+        {user ? (
+          <>
+            <span>{user.email}</span>
+            <button onClick={handleLogout} className="btn btn-xs">
+              Sign out
+            </button>
+          </>
+        ) : (
+          <Link to="/login">Login</Link>
+        )}
       </li>
     </>
   );

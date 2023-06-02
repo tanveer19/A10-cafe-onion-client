@@ -44,12 +44,12 @@ const Login = () => {
     const form = event.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    // console.log(email, password);
 
     signIn(email, password)
       .then((result) => {
-        const user = result.user;
-        console.log(user);
+        const loggedUser = result.user;
+        console.log(loggedUser);
         form.reset();
       })
       .catch((error) => {
@@ -93,25 +93,26 @@ const Login = () => {
                     </a>
                   </label>
                 </div>
+
+                <div className="flex">
+                  <button
+                    onClick={handleGoogleSignIn}
+                    className="btn btn-success mr-1 w-1/2"
+                  >
+                    Google Login
+                  </button>
+
+                  <button onClick={handleGithubSignIn} className="btn w-1/2">
+                    Github Login
+                  </button>
+                </div>
+                <div className="form-control mt-6">
+                  <button className="btn btn-primary" type="submit">
+                    Login
+                  </button>
+                </div>
               </form>
 
-              <div className="flex">
-                <button
-                  onClick={handleGoogleSignIn}
-                  className="btn btn-success mr-1 w-1/2"
-                >
-                  Google Login
-                </button>
-
-                <button onClick={handleGithubSignIn} className="btn w-1/2">
-                  Github Login
-                </button>
-              </div>
-              <div className="form-control mt-6">
-                <button className="btn btn-primary" type="submit">
-                  Login
-                </button>
-              </div>
               <p className="my-4 text-center">
                 New to Cafe Onion?
                 <Link className="text-orange-600 font-bold mx-2" to="/signup">
