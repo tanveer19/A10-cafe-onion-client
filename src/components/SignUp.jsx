@@ -7,7 +7,9 @@ import { AuthContext } from "../providers/AuthProvider";
 const auth = getAuth(app);
 
 const SignUp = () => {
+  // to get and show error in form
   const [error, setError] = useState("");
+  //
   const [success, setSuccess] = useState("");
 
   const { createUser } = useContext(AuthContext);
@@ -15,7 +17,8 @@ const SignUp = () => {
   const handleSignUp = (event) => {
     //1. prevent refresh
     event.preventDefault();
-    // setSuccess("");
+    // empty after submit
+    setSuccess("");
 
     // 2. collect form data
     const form = event.target;
@@ -24,17 +27,19 @@ const SignUp = () => {
     const password = form.password.value;
     console.log(name, email, password);
 
-    //3. create user in FB
+    //3. create user in Firebase
     createUser(email, password)
       .then((result) => {
-        const user = result.user;
-        console.log(user);
-        // setError("");
-        // event.target.reset();
-        // setSuccess("User has been created");
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        // clearing error message
+        setError("");
+        event.target.reset();
+        setSuccess("User has been created");
       })
       .catch((error) => {
-        console.log(error.message);
+        console.error(error.message);
+        setError(error.message);
       });
   };
   return (
@@ -66,6 +71,7 @@ const SignUp = () => {
                   name="email"
                   placeholder="email"
                   className="input input-bordered"
+                  required
                 />
               </div>
               <div className="form-control">
@@ -77,6 +83,7 @@ const SignUp = () => {
                   name="password"
                   placeholder="password"
                   className="input input-bordered"
+                  required
                 />
               </div>
 
@@ -105,6 +112,8 @@ const SignUp = () => {
                 Login
               </Link>
             </p>
+            <p className="bg-error">{error}</p>
+            <p className="bg-success">{success}</p>
           </div>
         </div>
       </div>
