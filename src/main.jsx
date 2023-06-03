@@ -12,6 +12,7 @@ import AuthProvider from "./providers/AuthProvider";
 import ChefRecipe from "./components/ChefRecipe";
 import PrivateRoute from "./routes/PrivateRoute";
 import Profile from "./components/Profile";
+import Chef from "./components/Chef";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/chef/:id",
+        element: <Chef></Chef>,
       },
     ],
   },
