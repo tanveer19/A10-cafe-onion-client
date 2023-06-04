@@ -33,7 +33,7 @@ const Home = () => {
         <div>
           {chefs.map((chef) => (
             <p key={chef.id}>
-              <Link to={`/chef/${chef.id}`}>{chef.Name}</Link>
+              <Link to={`/chef/${chef.id}`}>{chef.name}</Link>
             </p>
           ))}
         </div>
