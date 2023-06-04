@@ -81,7 +81,10 @@ const Header = () => {
             {navOptions}
           </ul>
         </div>
-        <Link to="/">Cafe Onion</Link>
+        <Link to="/">
+          {" "}
+          <img src="/public/img/logo-onion.png" alt="" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navOptions}</ul>
