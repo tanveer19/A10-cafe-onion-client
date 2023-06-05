@@ -82,7 +82,6 @@ const Header = () => {
           </ul>
         </div>
         <Link to="/">
-          {" "}
           <img src="/public/img/logo-onion.png" alt="" />
         </Link>
       </div>

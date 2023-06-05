@@ -12,8 +12,13 @@ const ChefRecipe = () => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
-        <p>{likes}</p>
-        <p>{id}</p>
+        <p>
+          Likes: {likes}
+          <br /> Recipes: {recipes}
+          <br />
+          Experience: {exp}
+          <br /> Bio: {bio}
+        </p>
       </div>
     </div>
   );
