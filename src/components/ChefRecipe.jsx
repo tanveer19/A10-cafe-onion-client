@@ -3,8 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 const ChefRecipe = () => {
   const chefrecipe = useLoaderData();
-  const { picture, name, bio, likes, recipes, exp, recipe_details } =
-    chefrecipe;
+  const { picture, name, bio, likes, recipes, exp } = chefrecipe;
 
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">
@@ -39,7 +38,11 @@ const ChefRecipe = () => {
                 {/* row 1 */}
                 <tr>
                   <th>1</th>
-                  <td></td>
+                  <td>
+                    {chefrecipe.recipe_details.map((data) => (
+                      <div>{data.recipe_name}</div>
+                    ))}
+                  </td>
                   <td>Quality Control Specialist</td>
                   <td>Blue</td>
                 </tr>
