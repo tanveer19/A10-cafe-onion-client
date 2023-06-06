@@ -22,11 +22,11 @@ const Header = () => {
         <ActiveLink to="/blog">Blog</ActiveLink>
       </li>
 
-      {user && (
+      {/* {user && (
         <li>
           <ActiveLink to="/chefrecipe">Chef Recipe</ActiveLink>
         </li>
-      )}
+      )} */}
 
       {user && (
         <li>

@@ -3,19 +3,8 @@ import { useLoaderData } from "react-router-dom";
 
 const ChefRecipe = () => {
   const chefrecipe = useLoaderData();
-  const {
-    id,
-    chef,
-    picture,
-    name,
-    bio,
-    likes,
-    recipes,
-    exp,
-    recipe_1,
-    recipe_2,
-    recipe_3,
-  } = chefrecipe;
+  const { picture, name, bio, likes, recipes, exp, recipe_details } =
+    chefrecipe;
 
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">
@@ -50,12 +39,7 @@ const ChefRecipe = () => {
                 {/* row 1 */}
                 <tr>
                   <th>1</th>
-                  <td>
-                    {/* {Array.isArray(chef.recipe_1) &&
-                      chef.recipe_1.map((data) => (
-                        <div key={chef.id}>{data.recipe_name}</div>
-                      ))} */}
-                  </td>
+                  <td></td>
                   <td>Quality Control Specialist</td>
                   <td>Blue</td>
                 </tr>

@@ -12,7 +12,7 @@ import AuthProvider from "./providers/AuthProvider";
 import ChefRecipe from "./components/ChefRecipe";
 import PrivateRoute from "./routes/PrivateRoute";
 import Profile from "./components/Profile";
-import Chef from "./components/Chef";
+// import Chef from "./components/Chef";
 
 const router = createBrowserRouter([
   {
@@ -30,14 +30,6 @@ const router = createBrowserRouter([
         element: <Blog></Blog>,
       },
       {
-        path: "/chefrecipe",
-        element: (
-          <PrivateRoute>
-            <ChefRecipe></ChefRecipe>
-          </PrivateRoute>
-        ),
-      },
-      {
         path: "/profile",
         element: (
           <PrivateRoute>
@@ -53,9 +45,25 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <SignUp></SignUp>,
       },
+      // {
+      //   path: "/chef",
+      //   element: <Chef></Chef>,
+      // },
       {
-        path: "/chef/:id",
-        element: <ChefRecipe></ChefRecipe>,
+        path: "/chefrecipe",
+        element: (
+          <PrivateRoute>
+            <ChefRecipe></ChefRecipe>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/chefrecipe/:id",
+        element: (
+          <PrivateRoute>
+            <ChefRecipe></ChefRecipe>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/chefs/${params.id}`),
       },
