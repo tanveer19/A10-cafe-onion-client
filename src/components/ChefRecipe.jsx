@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 
 const ChefRecipe = () => {
   const chefrecipe = useLoaderData();
   const { picture, name, bio, likes, recipes, exp } = chefrecipe;
+
+  const [isFavorite, setIsFavorite] = useState(false);
+
+  const toggleFavorite = () => {
+    setIsFavorite(!isFavorite);
+  };
 
   return (
     <div className="card lg:card-side bg-base-100 shadow-xl">
@@ -45,6 +51,15 @@ const ChefRecipe = () => {
                   </td>
                   <td>Quality Control Specialist</td>
                   <td>Blue</td>
+                  <td></td>
+                  <td>
+                    <button
+                      onClick={toggleFavorite}
+                      className={isFavorite ? "favorite" : "not-favorite"}
+                    >
+                      {isFavorite ? "Unfavorite" : "Favorite"}
+                    </button>
+                  </td>
                 </tr>
                 {/* row 2 */}
                 <tr>
