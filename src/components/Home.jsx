@@ -30,7 +30,7 @@ const Home = () => {
       {/* chef section */}
       <div>
         <h4 className="text-3xl text-center my-3"> All Chefs</h4>
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-2 md:grid-cols-3">
           {chefs.map((chef) => (
             <div key={chef.id}>
               <img className="w-40" src={chef.picture} alt="" />
@@ -38,6 +38,12 @@ const Home = () => {
               <h4>Experience: {chef.exp}</h4>
               <h4>Number of recipes: {chef.recipes}</h4>
               <h4>Likes: {chef.likes}</h4>
+              <h4>
+                {Array.isArray(chef.recipe_1) &&
+                  chef.recipe_1.map((data) => (
+                    <div key={chef.id}>{data.recipe_name}</div>
+                  ))}
+              </h4>
               <Link to={`/chef/${chef.id}`}>
                 <button className="btn btn-accent my-2">View Recipe</button>
               </Link>
