@@ -7,11 +7,16 @@ const ChefRecipe = () => {
   const chefrecipe = useLoaderData();
   const { picture, name, bio, likes, recipes, exp } = chefrecipe;
 
+  // disable button
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
+  // for favorite
   const [isFavorite, setIsFavorite] = useState(false);
 
   const toggleFavorite = () => {
     setIsFavorite(!isFavorite);
     toast("Added to Favorite!");
+    setIsButtonDisabled(true);
   };
 
   return (
@@ -58,9 +63,10 @@ const ChefRecipe = () => {
                   <td>
                     <button
                       onClick={toggleFavorite}
+                      disabled={isButtonDisabled}
                       className={isFavorite ? "favorite" : "not-favorite"}
                     >
-                      {isFavorite ? "Unfavorite" : "Favorite"}
+                      {isFavorite ? "Disabled" : "Favorite"}
                     </button>
                     <ToastContainer />
                   </td>
