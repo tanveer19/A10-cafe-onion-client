@@ -50,41 +50,30 @@ const ChefRecipe = () => {
               </thead>
               <tbody>
                 {/* row 1 */}
-                <tr>
-                  <th>1</th>
-                  <td>
-                    {chefrecipe.recipe_details.map((data) => (
+                {chefrecipe.recipe_details.map((data) => (
+                  <tr key={data.id}>
+                    <th>{data.id}</th>
+                    <td>
+                      {/* {chefrecipe.recipe_details.map((data) => (
                       <div>{data.recipe_name}</div>
-                    ))}
-                  </td>
-                  <td>Quality Control Specialist</td>
-                  <td>Blue</td>
-                  <td></td>
-                  <td>
-                    <button
-                      onClick={toggleFavorite}
-                      disabled={isButtonDisabled}
-                      className={isFavorite ? "favorite" : "not-favorite"}
-                    >
-                      {isFavorite ? "Disabled" : "Favorite"}
-                    </button>
-                    <ToastContainer />
-                  </td>
-                </tr>
-                {/* row 2 */}
-                <tr>
-                  <th>2</th>
-                  <td>Hart Hagerty</td>
-                  <td>Desktop Support Technician</td>
-                  <td>Purple</td>
-                </tr>
-                {/* row 3 */}
-                <tr>
-                  <th>3</th>
-                  <td>Brice Swyre</td>
-                  <td>Tax Accountant</td>
-                  <td>Red</td>
-                </tr>
+                    ))} */}
+                      {data.recipe_name}
+                    </td>
+                    <td>{data.ingredients}</td>
+                    <td>{data.instructions}</td>
+                    <td></td>
+                    <td>
+                      <button
+                        onClick={toggleFavorite}
+                        disabled={isButtonDisabled}
+                        className={isFavorite ? "favorite" : "not-favorite"}
+                      >
+                        {isFavorite ? "Disabled" : "Favorite"}
+                      </button>
+                      <ToastContainer />
+                    </td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
