@@ -6,7 +6,9 @@ const Home = () => {
   const [chefs, setChefs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/chefs")
+    fetch(
+      "https://2-17-a10-chef-recipe-hunter-server-tanveer19.vercel.app/chefs"
+    )
       .then((res) => res.json())
       .then((data) => setChefs(data))
       .catch((error) => console.error(error));
@@ -30,8 +32,8 @@ const Home = () => {
 
       {/* chef section */}
       <div>
-        <h4 className="text-3xl text-center my-3"> All Chefs</h4>
-        <div className="grid grid-cols-2 md:grid-cols-3">
+        <h4 className="text-5xl text-center my-3"> All Chefs</h4>
+        <div className="grid grid-cols-2 md:grid-cols-3 md:w-3/4 mx-auto p-2">
           {chefs.map((chef) => (
             <Chef key={chef.id} chef={chef}></Chef>
           ))}

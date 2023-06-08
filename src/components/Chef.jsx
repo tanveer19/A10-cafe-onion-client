@@ -1,11 +1,14 @@
 import React from "react";
+import LazyLoad from "react-lazy-load";
 import { Link, useParams } from "react-router-dom";
 
 const Chef = ({ chef }) => {
   const { id } = useParams();
   return (
     <div>
-      <img className="w-40" src={chef.picture} alt="" />
+      <LazyLoad height={162} width={400} threshold={0.95}>
+        <img className="w-40" src={chef.picture} alt="" />
+      </LazyLoad>
       <h3>Name: {chef.name}</h3>
       <h4>Experience: {chef.exp}</h4>
       <h4>Number of recipes: {chef.recipes}</h4>
