@@ -13,7 +13,7 @@ const ChefRecipe = () => {
   // for favorite
   const [isFavorite, setIsFavorite] = useState(false);
 
-  const toggleFavorite = () => {
+  const toggleFavorite = (id) => {
     setIsFavorite(!isFavorite);
     toast("Added to Favorite!");
     setIsButtonDisabled(true);
@@ -49,18 +49,12 @@ const ChefRecipe = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* row 1 */}
                 {chefrecipe.recipe_details.map((data) => (
                   <tr key={data.id}>
                     <th>{data.id}</th>
-                    <td>
-                      {/* {chefrecipe.recipe_details.map((data) => (
-                      <div>{data.recipe_name}</div>
-                    ))} */}
-                      {data.recipe_name}
-                    </td>
+                    <td>{data.recipe_name}</td>
                     <td>{data.ingredients}</td>
-                    <td>{data.instructions}</td>
+                    <td>{data.method}</td>
                     <td></td>
                     <td>
                       <button
