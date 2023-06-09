@@ -63,7 +63,7 @@ const Home = () => {
       <h4 className="text-5xl text-center my-3"> Menu Item</h4>
 
       <div>
-        <div className="h-96 carousel carousel-vertical rounded-box grid justify-center">
+        <div className="h-96 carousel carousel-vertical rounded-box grid justify-center ">
           <div className="carousel-item h-full">
             <img src="/img/menu/menu-item-1.png" />
           </div>

@@ -6,7 +6,7 @@ const Blog = () => {
       <h2 className="text-2xl bg-sky-600 p-2">
         Tell us the differences between uncontrolled and controlled components.
       </h2>
-      <div className="text-xl bg-gray-400 p-2">
+      <div className="text-xl bg-white p-2">
         Uncontrolled and controlled components are two different approaches to
         managing form inputs and their state in React. Main differences are:
         <p>
@@ -53,7 +53,7 @@ const Blog = () => {
       <h2 className="text-2xl bg-sky-600 p-2">
         How to validate React props using PropTypes?
       </h2>
-      <div className="text-xl bg-gray-400 p-2">
+      <div className="text-xl bg-white p-2">
         <p>
           Step 1: Install PropTypes Make sure you have the prop-types package
           installed in your React project. If not, you can install it using npm
@@ -74,7 +74,7 @@ const Blog = () => {
       <h2 className="text-2xl bg-sky-600 p-2">
         Tell us the difference between nodejs and express js
       </h2>
-      <div className="text-xl bg-gray-400 p-2">
+      <div className="text-xl bg-white p-2">
         Node.js and Express.js are two popular technologies in the JavaScript
         ecosystem, but they serve different purposes.
         <br />
@@ -95,7 +95,7 @@ const Blog = () => {
       <h2 className="text-2xl bg-sky-600 p-2">
         What is a custom hook, and why will you create a custom hook?
       </h2>
-      <div className="text-xl bg-gray-400 p-2">
+      <div className="text-xl bg-white p-2">
         A JavaScript method called a "custom hook" in React enables you to share
         stateful functionality between components. In order to manage and
         organize code in React apps, custom hooks are a technique to extract and
