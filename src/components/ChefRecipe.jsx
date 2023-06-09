@@ -55,7 +55,7 @@ const ChefRecipe = () => {
                     <td>{data.recipe_name}</td>
                     <td>{data.ingredients}</td>
                     <td>{data.method}</td>
-                    <td></td>
+                    <td>{data.rating}</td>
                     <td>
                       <button
                         onClick={toggleFavorite}

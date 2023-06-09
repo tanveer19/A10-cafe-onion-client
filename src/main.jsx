@@ -66,7 +66,7 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(
-            `https://2-17-a10-chef-recipe-hunter-server-tanveer19.vercel.app/chefs/${params.id}`
+            `https://2-16-a10-chef-recipe-hunter-server.vercel.app/chefs/${params.id}`
           ),
       },
     ],

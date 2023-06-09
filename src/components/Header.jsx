@@ -22,12 +22,6 @@ const Header = () => {
         <ActiveLink to="/blog">Blog</ActiveLink>
       </li>
 
-      {/* {user && (
-        <li>
-          <ActiveLink to="/chefrecipe">Chef Recipe</ActiveLink>
-        </li>
-      )} */}
-
       {user && (
         <li>
           <ActiveLink to="/profile">Profile</ActiveLink>
@@ -82,7 +76,7 @@ const Header = () => {
           </ul>
         </div>
         <Link to="/">
-          <img src="/public/img/logo-onion.png" alt="" />
+          <img src="/img/logo-onion.png" alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

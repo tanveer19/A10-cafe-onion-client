@@ -6,9 +6,7 @@ const Home = () => {
   const [chefs, setChefs] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://2-17-a10-chef-recipe-hunter-server-tanveer19.vercel.app/chefs"
-    )
+    fetch("https://2-16-a10-chef-recipe-hunter-server.vercel.app/chefs")
       .then((res) => res.json())
       .then((data) => setChefs(data))
       .catch((error) => console.error(error));
@@ -37,6 +35,53 @@ const Home = () => {
           {chefs.map((chef) => (
             <Chef key={chef.id} chef={chef}></Chef>
           ))}
+        </div>
+      </div>
+
+      {/* gallery */}
+
+      <div className="">
+        <h4 className="text-5xl text-center my-3"> Gallery</h4>
+
+        <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box">
+          <div className="carousel-item">
+            <img src="/img/gallery/gallery-1.jpg" className="rounded-box" />
+          </div>
+          <div className="carousel-item">
+            <img src="/img/gallery/gallery-2.jpg" className="rounded-box" />
+          </div>
+          <div className="carousel-item">
+            <img src="/img/gallery/gallery-3.jpg" className="rounded-box" />
+          </div>
+          <div className="carousel-item">
+            <img src="/img/gallery/gallery-4.jpg" className="rounded-box" />
+          </div>
+        </div>
+      </div>
+
+      {/* menu item */}
+      <h4 className="text-5xl text-center my-3"> Menu Item</h4>
+
+      <div>
+        <div className="h-96 carousel carousel-vertical rounded-box grid justify-center">
+          <div className="carousel-item h-full">
+            <img src="/img/menu/menu-item-1.png" />
+          </div>
+          <div className="carousel-item h-full">
+            <img src="/img/menu/menu-item-2.png" />
+          </div>
+          <div className="carousel-item h-full">
+            <img src="/img/menu/menu-item-3.png" />
+          </div>
+          <div className="carousel-item h-full">
+            <img src="/img/menu/menu-item-4.png" />
+          </div>
+          <div className="carousel-item h-full">
+            <img src="/img/menu/menu-item-5.png" />
+          </div>
+          <div className="carousel-item h-full">
+            <img src="/img/menu/menu-item-6.png" />
+          </div>
         </div>
       </div>
     </div>
