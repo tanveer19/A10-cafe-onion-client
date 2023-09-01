@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Chef from "./Chef";
+import Gallery from "./Gallery";
 
 const Home = () => {
   const [chefs, setChefs] = useState([]);
@@ -40,24 +41,7 @@ const Home = () => {
 
       {/* gallery */}
 
-      <div className="">
-        <h4 className="text-5xl text-center my-3"> Gallery</h4>
-
-        <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box">
-          <div className="carousel-item">
-            <img src="/img/gallery/gallery-1.jpg" className="rounded-box" />
-          </div>
-          <div className="carousel-item">
-            <img src="/img/gallery/gallery-2.jpg" className="rounded-box" />
-          </div>
-          <div className="carousel-item">
-            <img src="/img/gallery/gallery-3.jpg" className="rounded-box" />
-          </div>
-          <div className="carousel-item">
-            <img src="/img/gallery/gallery-4.jpg" className="rounded-box" />
-          </div>
-        </div>
-      </div>
+      <Gallery></Gallery>
 
       {/* menu item */}
       <h4 className="text-5xl text-center my-3"> Menu Item</h4>
