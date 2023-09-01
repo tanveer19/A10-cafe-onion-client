@@ -23,58 +23,41 @@ export default function Gallery() {
     <div>
       <h4 className="text-5xl text-center my-3"> Gallery</h4>
 
-      {/* <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box">
-        <div className="carousel-item">
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
+        className="mySwiper"
+      >
+        <SwiperSlide>
           <img src="/img/gallery/gallery-1.jpg" className="rounded-box" />
-        </div>
-        <div className="carousel-item">
+        </SwiperSlide>
+        <SwiperSlide>
           <img src="/img/gallery/gallery-2.jpg" className="rounded-box" />
-        </div>
-        <div className="carousel-item">
+        </SwiperSlide>
+        <SwiperSlide>
           <img src="/img/gallery/gallery-3.jpg" className="rounded-box" />
-        </div>
-        <div className="carousel-item">
+        </SwiperSlide>
+        <SwiperSlide>
           <img src="/img/gallery/gallery-4.jpg" className="rounded-box" />
+        </SwiperSlide>
+
+        <div className="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 48 48" ref={progressCircle}>
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span ref={progressContent}></span>
         </div>
-      </div> */}
-
-      <>
-        <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          onAutoplayTimeLeft={onAutoplayTimeLeft}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <img src="/img/gallery/gallery-1.jpg" className="rounded-box" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="/img/gallery/gallery-2.jpg" className="rounded-box" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="/img/gallery/gallery-3.jpg" className="rounded-box" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="/img/gallery/gallery-4.jpg" className="rounded-box" />
-          </SwiperSlide>
-
-          <div className="autoplay-progress" slot="container-end">
-            <svg viewBox="0 0 48 48" ref={progressCircle}>
-              <circle cx="24" cy="24" r="20"></circle>
-            </svg>
-            <span ref={progressContent}></span>
-          </div>
-        </Swiper>
-      </>
+      </Swiper>
     </div>
   );
 }
