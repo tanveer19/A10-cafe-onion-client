@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Chef from "./Chef";
 import Gallery from "./Gallery";
+import GridSections from "./GridSections";
 
 const Home = () => {
   const [chefs, setChefs] = useState([]);
@@ -30,16 +31,18 @@ const Home = () => {
       </div>
 
       {/* chef section */}
-      <div>
+      <div className="bg-[#eeeeee]">
         <h4 className="text-5xl text-center my-3"> All Chefs</h4>
-        <div className="grid grid-cols-2 md:grid-cols-3 md:w-3/4 mx-auto p-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 md:w-3/4 mx-auto p-2 justify-center items-center">
           {chefs.map((chef) => (
-            <Chef key={chef.id} chef={chef}></Chef>
+            <div key={chef.id} className="flex justify-center items-center">
+              <Chef chef={chef}></Chef>
+            </div>
           ))}
         </div>
       </div>
 
-      {/* gallery */}
+      <GridSections></GridSections>
 
       <Gallery></Gallery>
 

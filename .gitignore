@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 .yarn
+.firebase
 
 # Editor directories and files
 .vscode/*
