@@ -33,11 +33,9 @@ const Home = () => {
       {/* chef section */}
       <div className="bg-[#eeeeee]">
         <h4 className="text-5xl text-center my-3"> All Chefs</h4>
-        <div className="grid grid-cols-2 md:grid-cols-3 md:w-3/4 mx-auto p-2 justify-center items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 md:w-3/4 mx-auto p-2">
           {chefs.map((chef) => (
-            <div key={chef.id} className="flex justify-center items-center">
-              <Chef chef={chef}></Chef>
-            </div>
+            <Chef key={chef.id} chef={chef}></Chef>
           ))}
         </div>
       </div>
