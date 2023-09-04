@@ -20,7 +20,7 @@ export default function Gallery() {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <div>
+    <div className="my-8">
       <h4 className="text-5xl text-center my-3"> Gallery</h4>
 
       <Swiper
