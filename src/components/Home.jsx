@@ -37,7 +37,7 @@ const Home = () => {
       {/* chef section */}
       <div className="bg-[#eeeeee]">
         <h4 className="text-5xl text-center my-3"> All Chefs</h4>
-        <div className="grid grid-cols-2 md:grid-cols-3 md:w-3/4 mx-auto p-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 p-2 w-full max-w-7xl mx-auto">
           {chefs.map((chef) => (
             <Chef key={chef.id} chef={chef}></Chef>
           ))}
