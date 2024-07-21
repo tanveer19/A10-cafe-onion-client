@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Chef from "./Chef";
 import Gallery from "./Gallery";
 import GridSections from "./GridSections";
@@ -19,7 +18,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-white">
       {/* banner start */}
 
       <div
@@ -35,7 +34,7 @@ const Home = () => {
       </div>
 
       {/* chef section */}
-      <div className="bg-[#eeeeee]">
+      <div className="">
         <h4 className="text-5xl text-center my-3"> All Chefs</h4>
         <div className="grid grid-cols-2 md:grid-cols-3 p-2 w-full max-w-7xl mx-auto">
           {chefs.map((chef) => (

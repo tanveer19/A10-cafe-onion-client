@@ -13,7 +13,7 @@ dist-ssr
 *.local
 .yarn
 .firebase
-
+bun.lockb
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
